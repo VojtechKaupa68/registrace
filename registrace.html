@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* lehký modrý odstín */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4c7aaf; /* zelená barva pro tlačítko Odeslat */
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4c7aaf; /* tmavší zelená při najetí myší */
+        }
+    </style>
+</head>
+<body>
+    <form action="vysledek.html" method="post">
+        <h1>Registrace</h1>
+        <label for="jmeno">Jméno:</label>
+        <input type="text" id="jmeno" name="jmeno">
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+        
+        <input type="submit" value="Odeslat">
+    </form>
+</body>
+</html>
